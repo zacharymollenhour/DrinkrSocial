@@ -1,0 +1,15 @@
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\bin\Debug\net6.0\DrinkrSocial.Application.deps.json
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\bin\Debug\net6.0\DrinkrSocial.Application.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\bin\Debug\net6.0\DrinkrSocial.Application.pdb
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\bin\Debug\net6.0\DrinkrSocial.Domain.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\bin\Debug\net6.0\DrinkrSocial.Domain.pdb
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.csproj.AssemblyReference.cache
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.AssemblyInfoInputs.cache
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.AssemblyInfo.cs
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.csproj.CoreCompileInputs.cache
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.csproj.CopyComplete
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\refint\DrinkrSocial.Application.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\DrinkrSocial.Application.pdb
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Application\obj\Debug\net6.0\ref\DrinkrSocial.Application.dll

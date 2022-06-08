@@ -1,0 +1,12 @@
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\bin\Debug\net6.0\DrinkrSocial.Domain.deps.json
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\bin\Debug\net6.0\DrinkrSocial.Domain.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\bin\Debug\net6.0\DrinkrSocial.Domain.pdb
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.csproj.AssemblyReference.cache
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.AssemblyInfoInputs.cache
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.AssemblyInfo.cs
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.csproj.CoreCompileInputs.cache
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\refint\DrinkrSocial.Domain.dll
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\DrinkrSocial.Domain.pdb
+C:\Users\zachm\Desktop\Source Code\DrinkrSocial\DrinkrSocial.Domain\obj\Debug\net6.0\ref\DrinkrSocial.Domain.dll

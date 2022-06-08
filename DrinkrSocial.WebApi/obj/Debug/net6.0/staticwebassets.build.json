@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ih6LZ7Vxbgn2YLKj0ZfoGFtc44JNwFXcUINoqp4oQBY=",
+  "Source": "DrinkrSocial.WebApi",
+  "BasePath": "_content/DrinkrSocial.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
