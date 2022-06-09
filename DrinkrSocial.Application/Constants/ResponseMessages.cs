@@ -12,6 +12,9 @@ namespace DrinkrSocial.Application.Constants
         public static string EmailConfirmationRequired => "Please Confirm your Email Address";
         public static string AuthenticationFailed => "Username or password is incorrect";
         public static string UsernameAlreadyExists => "Username is already exist";
+        public static string RefreshTokenNotFound => "Refresh Token Not Found";
+        public static string RefreshTokenExpired => "Refresh Token Expired";
+
 
     }
 }
