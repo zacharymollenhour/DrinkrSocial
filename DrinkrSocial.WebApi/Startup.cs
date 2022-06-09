@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using DrinkrSocial.Persistence;
+using DrinkrSocial.WebApi.Infrastructure.Filters;
+using FluentValidation.AspNetCore;
 
 namespace WebApi
 {
@@ -22,7 +24,9 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             #region Swagger
+
             services.AddSwaggerGen(c =>
             {
                 c.IncludeXmlComments(string.Format(@"{0}\DrinkrSocial.xml", System.AppDomain.CurrentDomain.BaseDirectory));
@@ -33,8 +37,11 @@ namespace WebApi
                 });
 
             });
+
             #endregion
+
             #region Api Versioning
+
             // Add API Versioning to the Project
             services.AddApiVersioning(config =>
             {
@@ -45,10 +52,18 @@ namespace WebApi
                 // Advertise the API versions supported for the particular endpoint
                 config.ReportApiVersions = true;
             });
+
             #endregion
+
             services.AddApplication();
+
             services.AddPersistence(Configuration);
-            services.AddControllers();
+
+
+            services.AddControllers(options =>
+            {
+                options.Filters.Add(typeof(ValidationFilter));
+            }).AddFluentValidation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

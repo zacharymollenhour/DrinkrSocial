@@ -1,4 +1,4 @@
-﻿using DrinkrSocial.Application.Features.UserFeatures.Queries;
+﻿using DrinkrSocial.Application.EventHandlers.Users.Commands;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DrinkrSocial.WebApi.Controllers.v1
@@ -16,7 +16,7 @@ namespace DrinkrSocial.WebApi.Controllers.v1
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {
-            return Ok(await Mediator.Send(new UserLoginQuery { UserName = username, Password = password }));
+            return Ok(await Mediator.Send(new LoginCommand { UserName = username, Password = password }));
         }
     }
 }
