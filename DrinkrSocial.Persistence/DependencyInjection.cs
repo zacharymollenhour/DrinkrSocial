@@ -1,17 +1,16 @@
 ﻿
 using DrinkrSocial.Application.Interfaces;
+
+using DrinkrSocial.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using DrinkrSocial.Persistence.Context;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using DrinkrSocial.Persistence.Settings;
 using DrinkrSocial.Application.Interfaces.Repositories;
 using DrinkrSocial.Persistence.Repositories;
 using DrinkrSocial.Application.Interfaces.Services;
 using DrinkrSocial.Persistence.Services;
+using EasyCaching.Core.Configurations;
 
 namespace DrinkrSocial.Persistence
 {
@@ -58,7 +57,7 @@ namespace DrinkrSocial.Persistence
                     option.UseInMemory();
                 });
             }
-            services.AddTransient<IEasyCacheService, EasyCacheService>();
+            services.AddTransient<ICacheService, CacheService>();
         }
     }
 }

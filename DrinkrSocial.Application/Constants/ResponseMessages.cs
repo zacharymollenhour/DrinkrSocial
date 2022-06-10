@@ -15,6 +15,10 @@ namespace DrinkrSocial.Application.Constants
         public static string RefreshTokenNotFound => "Refresh Token Not Found";
         public static string RefreshTokenExpired => "Refresh Token Expired";
 
-
+        public static string EmailIsAlreadyExist => "Email is already exist";
+        public static string RegisterSuccessfully => "Register successfuly please look at your mail box for account confirmation.";
+        public static string PasswordDontMatchWithConfirmation => "Password doesn't match its confirmation";
+        public static string PasswordChangedSuccessfully => "Password changed successfully";
+        public static string CurrentPasswordIsFalse => "Current Password is false";
     }
 }

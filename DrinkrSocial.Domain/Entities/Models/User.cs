@@ -17,9 +17,9 @@ namespace DrinkrSocial.Domain.Entities.Models
         public byte[] PasswordSalt { get; set; }
         public bool EmailConfirmed { get; set; } = false;
         public virtual ICollection<UserRole> UserRoles { get; set; }
-        public string EmailConfirmationCode { get; set; }
-        public string EmailConfirmedCode { get; set; }
-        public string ResetPasswordCode { get; set; }
+        public string? EmailConfirmationCode { get; set; }
+        public string? EmailConfirmedCode { get; set; }
+        public string? ResetPasswordCode { get; set; }
         public string PostalCode { get; set; }
 
     }

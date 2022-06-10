@@ -1,4 +1,4 @@
-﻿using Application.Wrappers.Abstract;
+﻿using DrinkrSocial.Application.Wrappers.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;

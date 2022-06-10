@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DrinkrSocial.Application.EventHandlers.Users.Commands;
 using DrinkrSocial.Domain.Entities.DTO;
 using DrinkrSocial.Domain.Entities.Models;
 using System;
@@ -15,6 +16,7 @@ namespace DrinkrSocial.Application.EntityMappings
         {
             CreateMap<User, UserDTO>().ReverseMap();
             CreateMap<UserRole, UserRoleDTO>().ReverseMap();
+            CreateMap<User, UserRegistrationCommand>().ReverseMap();
         }
     }
 }

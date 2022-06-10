@@ -18,6 +18,7 @@ namespace DrinkrSocial.Persistence.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<User> Users { get; set; }

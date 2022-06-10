@@ -68,3 +68,4 @@ namespace DrinkrSocial.Application.EventHandlers.Users.Commands
             }
         }
     }
+}

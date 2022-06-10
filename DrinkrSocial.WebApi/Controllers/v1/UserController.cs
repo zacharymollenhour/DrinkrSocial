@@ -1,22 +1,25 @@
-﻿using DrinkrSocial.Application.EventHandlers.Users.Commands;
+﻿using DrinkrSocial.Application.Wrappers.Abstract;
+using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DrinkrSocial.WebApi.Controllers.v1
 {
-    [ApiVersion("1.0")]
     public class UserController : BaseApiController
     {
+        private readonly IMediator _mediator;
 
-        /// <summary>
-        /// Controller to handle User Authentication of existing accounts
-        /// </summary>
-        /// <param name="username"></param>
-        /// <param name="password"></param>
-        /// <returns></returns>
-        [HttpPost]
-        public async Task<IActionResult> Login(string username, string password)
+        public UserController(IMediator mediator)
         {
-            return Ok(await Mediator.Send(new LoginCommand { UserName = username, Password = password }));
+            _mediator = mediator;
+        }
+
+        [Authorize]
+        [HttpPost("changepassword")]
+        public async Task<IResponse> ChangePassword(ChangePasswordCommand command)
+        {
+            command.UserID = UserId.Value;
+            return await _mediator.Send(command);
         }
     }
 }

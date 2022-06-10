@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+﻿using DrinkrSocial.Persistence.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace DrinkrSocial.WebApi.Infrastructure.Extensions
 {
@@ -13,7 +14,7 @@ namespace DrinkrSocial.WebApi.Infrastructure.Extensions
             }).AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, opts =>
             {
                 var jwtSettings = configuration.GetSection("JWTSettings").Get<JWTSettings>();
-            })
+            });
         }
 
     }

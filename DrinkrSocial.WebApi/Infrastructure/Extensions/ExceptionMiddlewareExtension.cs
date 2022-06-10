@@ -1,4 +1,6 @@
-﻿namespace DrinkrSocial.WebApi.Infrastructure.Extensions
+﻿using DrinkrSocial.Persistence.Middleware;
+
+namespace DrinkrSocial.WebApi.Infrastructure.Extensions
 {
     public static class ExceptionMiddlewareExtension
     {
