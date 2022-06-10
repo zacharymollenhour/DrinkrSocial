@@ -1,4 +1,5 @@
-﻿using DrinkrSocial.Application.Wrappers.Abstract;
+﻿using DrinkrSocial.Application.EventHandlers.Users.Commands;
+using DrinkrSocial.Application.Wrappers.Abstract;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +19,7 @@ namespace DrinkrSocial.WebApi.Controllers.v1
         [HttpPost("changepassword")]
         public async Task<IResponse> ChangePassword(ChangePasswordCommand command)
         {
-            command.UserID = UserId.Value;
+            command.UserId = UserId.Value;
             return await _mediator.Send(command);
         }
     }
