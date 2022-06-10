@@ -1,5 +1,5 @@
 ﻿using DrinkrSocial.Application.Interfaces.Repositories;
-using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.Models.Users;
 using DrinkrSocial.Persistence.Context;
 using System;
 using System.Collections.Generic;

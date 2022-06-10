@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DrinkrSocial.Domain.Entities.Models
+namespace DrinkrSocial.Domain.Entities.Models.Users
 {
     public class TokenRefresh : BaseEntity<int>
     {

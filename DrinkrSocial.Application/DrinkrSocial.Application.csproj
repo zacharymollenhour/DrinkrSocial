@@ -23,6 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="EventHandlers\Taverns\Validators\" />
+    <Folder Include="EventHandlers\Taverns\Queries\" />
     <Folder Include="EventHandlers\Users\Queries\" />
   </ItemGroup>
 

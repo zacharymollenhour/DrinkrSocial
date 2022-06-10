@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Responses\" />
-    <Folder Include="Entities\Requests\" />
+    <Compile Remove="Entities\Responses\**" />
+    <EmbeddedResource Remove="Entities\Responses\**" />
+    <None Remove="Entities\Responses\**" />
   </ItemGroup>
 
   <ItemGroup>

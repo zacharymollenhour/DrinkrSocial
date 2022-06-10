@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DrinkrSocial.Domain.Entities.DTO
+namespace DrinkrSocial.Domain.Entities.DTO.Users
 {
     public class TokenDTO
     {

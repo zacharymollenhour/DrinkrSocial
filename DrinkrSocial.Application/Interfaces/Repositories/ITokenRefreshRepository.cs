@@ -1,4 +1,4 @@
-﻿using DrinkrSocial.Domain.Entities.Models;
+﻿using DrinkrSocial.Domain.Entities.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;

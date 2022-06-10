@@ -1,5 +1,5 @@
 ﻿using DrinkrSocial.Application.Helpers;
-using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.Models.Users;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DrinkrSocial.Persistence.EntityConfigurations
+namespace DrinkrSocial.Persistence.EntityConfigurations.Users
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {

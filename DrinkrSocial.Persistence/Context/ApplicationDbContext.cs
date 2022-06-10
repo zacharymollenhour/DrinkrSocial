@@ -1,5 +1,6 @@
 ﻿using DrinkrSocial.Application.Interfaces;
-using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.Models.Taverns;
+using DrinkrSocial.Domain.Entities.Models.Users;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,9 @@ namespace DrinkrSocial.Persistence.Context
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
         public DbSet<TokenRefresh> TokenRefreshs { get; set; }
+        public DbSet<Tavern> Taverns { get; set; }
+        public DbSet<TavernHappyHours> TavernHappyHours { get; set; }
+        public DbSet<TavernOperatingHours> TavernOperatingHours { get; set; }
         public async Task<int> SaveChangesAsync()
         {
             return await base.SaveChangesAsync();

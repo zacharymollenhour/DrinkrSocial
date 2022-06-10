@@ -8,6 +8,8 @@ namespace DrinkrSocial.Application.Constants
 {
     public class ResponseMessages
     {
+
+        #region User Response Messages
         public static string UserRolesUpdatedSuccessfully => "User Roles Updated Successfully";
 
         public static string UpdatedSuccessfully => "Updated Successfully";
@@ -34,5 +36,14 @@ namespace DrinkrSocial.Application.Constants
         public static string CurrentPasswordIsFalse => "Current Password is false";
         public static string EmailSuccessfullyChangedConfirmYourEmail => "Email Successfully Changed.Please confirm your email";
 
+        #endregion
+
+
+        #region Tavern Response Messages
+
+        public static string NoTavernsNearby => "No Taverns Nearby";
+
+
+        #endregion 
     }
 }

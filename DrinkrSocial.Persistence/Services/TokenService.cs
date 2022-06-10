@@ -1,5 +1,4 @@
-﻿using DrinkrSocial.Domain.Entities.DTO;
-using DrinkrSocial.Application.Interfaces.Services;
+﻿using DrinkrSocial.Application.Interfaces.Services;
 using DrinkrSocial.Domain.Entities;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -8,7 +7,8 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.DTO.Users;
+using DrinkrSocial.Domain.Entities.Models.Users;
 
 namespace DrinkrSocial.Persistence.Services
 {

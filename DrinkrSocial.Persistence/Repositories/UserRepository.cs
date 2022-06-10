@@ -1,6 +1,6 @@
 ﻿using DrinkrSocial.Application.Interfaces.Repositories;
 using DrinkrSocial.Domain.Entities.DTO;
-using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.Models.Users;
 using DrinkrSocial.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -30,10 +30,7 @@ namespace DrinkrSocial.Persistence.Repositories
             }).ToListAsync();
         }
 
-        public Task<IEnumerable<UserDTO>> GetALlUsersWithRolesAsync()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public async Task<User> GetUserRolesByUserIdAsync(Guid userid)
         {

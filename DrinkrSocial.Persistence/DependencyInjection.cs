@@ -35,6 +35,8 @@ namespace DrinkrSocial.Persistence
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<ITokenService, TokenService>();
 
+            services.AddScoped<ITavernRepository, TavernRepository>();
+
 
 
             var cacheSettings = configuration.GetSection("CacheSettings").Get<CacheSettings>();

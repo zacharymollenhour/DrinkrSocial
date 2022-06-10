@@ -4,7 +4,7 @@ using DrinkrSocial.Application.Interfaces.Repositories;
 using DrinkrSocial.Application.Interfaces.Services;
 using DrinkrSocial.Application.Wrappers.Abstract;
 using DrinkrSocial.Application.Wrappers.Concrete;
-using DrinkrSocial.Domain.Entities.DTO;
+using DrinkrSocial.Domain.Entities.DTO.Users;
 using MediatR;
 using System;
 using System.Collections.Generic;

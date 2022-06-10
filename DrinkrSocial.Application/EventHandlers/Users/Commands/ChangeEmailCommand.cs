@@ -35,7 +35,7 @@ namespace DrinkrSocial.Application.EventHandlers.Users.Commands
             private readonly IEmailService _emailService;
             private readonly ICacheService _easyCacheService;
 
-            public ChangeEmailCommandHandler(IUserRepository userRepository, IUnitOfWork unitOfWork, IEmailService emailService, IEasyCacheService easyCacheService)
+            public ChangeEmailCommandHandler(IUserRepository userRepository, IUnitOfWork unitOfWork, IEmailService emailService, ICacheService easyCacheService)
             {
                 _userRepository = userRepository;
                 _unitOfWork = unitOfWork;
@@ -67,3 +67,4 @@ namespace DrinkrSocial.Application.EventHandlers.Users.Commands
             }
         }
     }
+}

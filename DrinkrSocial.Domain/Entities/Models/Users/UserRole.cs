@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DrinkrSocial.Domain.Entities.Models
+namespace DrinkrSocial.Domain.Entities.Models.Users
 {
-    public class UserRole : BaseEntity<Guid>
+    public class UserRole
     {
         public Guid UserId { get; set; }
         public Guid RoleId { get; set; }

@@ -1,4 +1,4 @@
-﻿using DrinkrSocial.Domain.Entities.Models;
+﻿using DrinkrSocial.Domain.Entities.Models.Users;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

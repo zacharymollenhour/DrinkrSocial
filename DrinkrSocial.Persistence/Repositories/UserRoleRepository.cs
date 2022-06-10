@@ -1,6 +1,6 @@
 ﻿using DrinkrSocial.Application.Interfaces.Repositories;
 using DrinkrSocial.Domain.Entities.DTO;
-using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.Models.Users;
 using DrinkrSocial.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System;

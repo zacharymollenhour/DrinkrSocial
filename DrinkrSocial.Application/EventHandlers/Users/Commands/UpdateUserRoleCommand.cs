@@ -5,6 +5,7 @@ using DrinkrSocial.Application.Interfaces.Services;
 using DrinkrSocial.Application.Wrappers.Abstract;
 using DrinkrSocial.Application.Wrappers.Concrete;
 using DrinkrSocial.Domain.Entities.Models;
+using DrinkrSocial.Domain.Entities.Models.Users;
 using MediatR;
 using System;
 using System.Collections.Generic;
