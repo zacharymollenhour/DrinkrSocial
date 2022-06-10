@@ -9,6 +9,9 @@ using System.Collections.Generic;
 using System.Text;
 using DrinkrSocial.Persistence.Settings;
 using DrinkrSocial.Application.Interfaces.Repositories;
+using DrinkrSocial.Persistence.Repositories;
+using DrinkrSocial.Application.Interfaces.Services;
+using DrinkrSocial.Persistence.Services;
 
 namespace DrinkrSocial.Persistence
 {
@@ -16,9 +19,9 @@ namespace DrinkrSocial.Persistence
     {
         public static void AddInfrastructreServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<CAContext>(options =>
+            services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseNpgsql(configuration.GetConnectionString("PostgreSqlConnection"));
+                options.UseSqlServer(configuration.GetConnectionString("DBConnection"));
             });
 
             services.Configure<JWTSettings>(configuration.GetSection("JWTSettings"));
@@ -27,7 +30,7 @@ namespace DrinkrSocial.Persistence
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITokenRefreshRepository, TokenRefreshRepository>();
-            services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IUserRoleRepository, UserRoleRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped<IEmailService, EmailService>();
