@@ -2,14 +2,14 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using System.Security.Claims;
+
 namespace DrinkrSocial.WebApi.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("api/v{version:apiVersion}/[controller]")]
-    public abstract class BaseApiController : ControllerBase
+    public class BaseApiController : ControllerBase
     {
-        private IMediator _mediator;
-
-        protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
+        public Guid? UserId => new(HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
     }
 }
